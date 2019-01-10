@@ -1,3 +1,4 @@
+/*
 // variable assign
 const firstName = 'Manish'
 const lastName = 'Kumar'
@@ -42,3 +43,36 @@ val = firstName.replace('Man', 'ash')
 // print val
 console.log(firstName, lastName)
 console.log(val);
+
+*/
+
+let people = [{
+        'id': 1,
+        'name': 'Manish'
+    },
+    {
+        'id': 2,
+        'name': 'Shiva'
+    },
+    {
+        'id': 3,
+        'name': 'Rudra'
+    }
+]
+
+console.log(people);
+
+// Map function for returning array 
+console.log(people.map((person) => person.name))
+
+// ForEach(), for looping on list. dont use this on objects
+people.forEach((person) => {
+    console.log(person)
+})
+
+people.forEach((person) => {
+    // for looping in object
+    for (let item in person) {
+        console.log(item)
+    }
+})
